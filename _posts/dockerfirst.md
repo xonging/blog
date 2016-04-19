@@ -8,4 +8,4 @@ tags:
   - docker
 ---
 # 在linux 下安装 docker
-1 首先环境如下
+1 环境阿里云上的ubuntu
