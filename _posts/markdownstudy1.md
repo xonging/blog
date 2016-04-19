@@ -17,9 +17,7 @@ Atom相关介绍和各版本下载地址[https://github.com/atom/atom](https://g
 
 #### 标题设置
 标题主要用==、--和#来表示，#数量越多表示标题字体越小
-
-1. =
-
+=
 ```
 一级标题
 ==
@@ -27,7 +25,7 @@ Atom相关介绍和各版本下载地址[https://github.com/atom/atom](https://g
 结果预览：
 一级标题
 ==
-2. -
+-
 
 ```
 二级标题
@@ -36,8 +34,7 @@ Atom相关介绍和各版本下载地址[https://github.com/atom/atom](https://g
 结果预览：
 二级标题
 --
-3. #
-
+#
 ```
 # title 1
 ## title 2
