@@ -10,7 +10,7 @@ tags:
   - 配置
 ---
 Redis是一个开源的、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库,在高并发的应用系统中有很多应用场景.简单介绍一下在linux 下如何安装redis.
-1. 下载源码编译和安装
+#### 下载源码编译和安装
 [3.2版本下载地址](http://download.redis.io/releases/redis-3.2.0.tar.gz "3.2版本") 
 [Redis官网](http://redis.io/ "Redis官网")
 ```
@@ -20,13 +20,13 @@ Redis是一个开源的、支持网络、可基于内存亦可持久化的日志
 ```
 root@iZ25j7qhlyuZ:/usr/lib# tar -xzvf redis-3.2.0.tar.gz redis-3.2.0/
 ```
-编译和安装
+#### 编译和安装
 ```
 root@iZ25j7qhlyuZ:/usr/lib# cd redis-3.2.0/
 root@iZ25j7qhlyuZ:/usr/lib/redis-3.2.0# make && make install
 ```
 接下来输出了一大堆日志,好难懂,应该没有ERROR就行
-2. 修改配置文件
+#### 修改配置文件
 首先修改内存分配策略
 ```
 root@iZ25j7qhlyuZ:/usr/lib/redis-3.2.0# vi /etc/sysctl.conf
@@ -66,7 +66,7 @@ requirepass yangkui 客户端访问时的密码(当前密码是yangkui)
 ```
 :wq
 ```
-3. 启动Redis和测试连接
+启动Redis和测试连接
 启动Redis服务
 ```
 root@iZ25j7qhlyuZ:/usr/lib/redis-3.2.0# redis-server /etc/redis.conf
@@ -97,13 +97,13 @@ OK
 127.0.0.1:6379>
 ```
 至此,一个Redis单机安装完成.
-4. 补充,设置Redis开机启动
-  1. 编写开机自启动脚本
+补充,设置Redis开机启动
+1. 编写开机自启动脚本
 ```
 root@iZ25j7qhlyuZ:/usr/lib/redis-3.2.0# cp ./utils/redis_init_script /etc/init.d/redis
 root@iZ25j7qhlyuZ:/usr/lib/redis-3.2.0# vi /etc/init.d/redis
 ```
- 2. 修改配置文件中注释位置的路径
+2. 修改配置文件中注释位置的路径
 ```
 #!/bin/sh
 #
@@ -145,18 +145,18 @@ case "$1" in
         ;;
 esac
 ```
- 3. 通过VI保存好之后,赋给它可执行的权限和设置开机启动
+3. 通过VI保存好之后,赋给它可执行的权限和设置开机启动
 ```
 root@iZ25j7qhlyuZ:/usr/lib/redis-3.2.0# chmod 777 /etc/init.d/redis
 root@iZ25j7qhlyuZ:/usr/lib/redis-3.2.0# vi /etc/rc.local #非Ubuntu系统的话通过 chkconfig redis on来设置开机启动
 ```
- 4. 在exit 0 前面添加service redis start保存
+4. 在exit 0 前面添加service redis start保存
 ```
 service redis start
 exit 0
 ~       
 ```
- 5. 测试下脚本是不是好使
+5. 测试下脚本是不是好使
  先杀掉redis进程,然后
 ```
 root@iZ25j7qhlyuZ:/usr/lib/redis-3.2.0# service redis start
