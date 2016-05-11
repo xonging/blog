@@ -1,5 +1,5 @@
 ---
-title: Redis的安装
+title: 在linux下安装Redis
 date: 2016-5-11
 categories:
   - Redis
