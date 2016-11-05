@@ -12,3 +12,4 @@ tags:
 ```
 sudo apt install docker.io
 ```
+2 可以先试试装个UBuntu
