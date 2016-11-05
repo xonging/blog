@@ -12,7 +12,3 @@ tags:
 ```
 sudo apt install docker.io
 ```
-
-未完待续
-
-烦烦烦
