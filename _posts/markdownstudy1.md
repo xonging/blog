@@ -25,7 +25,7 @@ Atom相关介绍和各版本下载地址[https://github.com/atom/atom](https://g
 结果预览：
 一级标题
 ==
--
+
 
 ```
 二级标题
@@ -40,12 +40,110 @@ Atom相关介绍和各版本下载地址[https://github.com/atom/atom](https://g
 ## title 2
 ### title 3
 #### title 4
-......
+##### title 5
+###### title 6
 ```
 结果预览：
 # title 1
 ## title 2
 ### title 3
 #### title 4
-......
+##### title 5
+###### title 6
+```
+*斜体*
+```
+*斜体*
+```
+**粗体**
+```
+**粗体**
+
+有序列表
+```
+1.  item1
+2.  item2
+3.  item3
+或者
+2.  item1
+1.  item2
+3.  item3
+```
+预览结果
+2.  item1
+1.  item2
+3.  item3
+
+无序列表
+```markdown
+* item1
+* item2
+* item3
+```
+结果预览
+* item1
+* item2
+* item3
+
+嵌套
+```
+1.  第一级别1
+  1. 第二级别1
+  2. 第二级别2
+2.  第一级别
+```
+1.  第一级别1
+  1. 第二级别1
+  2. 第二级别2
+2.  第一级别
+
+链接
+
+引用式
+```
+I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].  
+
+[1]: http://google.com/        "Google"
+[2]: http://search.yahoo.com/  "Yahoo Search"
+[3]: http://search.msn.com/    "MSN Search"
+```
+
+I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].  
+
+[1]: http://google.com/        "Google"
+[2]: http://search.yahoo.com/  "Yahoo Search"
+[3]: http://search.msn.com/    "MSN Search"
+
+内联式
+```
+[Google](http://www.google.com "Google")
+```
+[Google](http://www.google.com "Google")
+
+表格
+```
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+```
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+```
+dog | bird | cat
+----|------|----
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
+```
+dog | bird | cat
+----|------|----
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
 未完待续
