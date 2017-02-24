@@ -13,6 +13,6 @@ tags:
 |      | 仓储 | 打包 |分拣 |订单配送 | 订单收款 | 开具发票 |
 | ---- |:----:|:---:|:---:|:------:|:-------:|:-------:|
 | FBP  | √    | √   | √   | √      | √       | √       |
-| LBP  | √    | <font color='red'>×</font>   | √   | √      | √       | √       |
-| SOPL | √    | <font color='red'>×</font>   | √   | √      | √       | <font color='red'>×</font>        |
-| SOP  | √    | <font color='red'>×</font>   | <font color='red'>×</font>   | 可选择京东|可选择京东货到付款 | <font color='red'>×</font> |
+| LBP  | <font color='red'>×</font> | <font color='red'>×</font>   | √   | √      | √       | √       |
+| SOPL | <font color='red'>×</font> | <font color='red'>×</font>   | √   | √      | √       | <font color='red'>×</font>        |
+| SOP  | <font color='red'>×</font> | <font color='red'>×</font>   | <font color='red'>×</font>   | 可选择京东|可选择京东货到付款 | <font color='red'>×</font> |
